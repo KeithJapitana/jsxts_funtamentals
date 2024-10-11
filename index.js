@@ -70,7 +70,7 @@ function max (a,b) {
 function isLandscape (width, height)  {
     return (width > height) ? true : false;
 }*/
-const output = fizzBuzz(15);
+/*const output = fizzBuzz(15);
 
 
 
@@ -84,4 +84,26 @@ function fizzBuzz(input) {
 
      return input;
 
+}*/
+
+checkSpeed(700);
+
+function checkSpeed(speed) {
+    const speedLimit = 70;
+    const speedPoint = 5;
+    const speedPointsLimit = 12;
+
+    if (speed < speedLimit) {
+        console.log('ok');
+    }
+    else {
+        let points =  Math.floor ((speed - speedLimit) / speedPoint);
+        if (points >= speedPointsLimit) {
+            console.log(`You're Suspended`);
+        }
+        else{
+            console.log("Drive Slowly");
+        }
+
+    }
 }
